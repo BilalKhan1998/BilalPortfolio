@@ -1,0 +1,14 @@
+@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+<main class="section-wrap error-page">
+    <p class="eyebrow">SOMETHING WENT WRONG</p>
+    <h1>That wasn't<br /><span class="gradient-text">supposed to happen.</span></h1>
+    <p>An unexpected error occurred. Please try again.</p>
+    @if (Model.ShowRequestId)
+    {
+        <p class="fine-print">Request ID: <code>@Model.RequestId</code></p>
+    }
+    <a class="button button-primary" asp-controller="Home" asp-action="Index">Return home</a>
+</main>

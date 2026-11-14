@@ -1,0 +1,28 @@
+
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Visual Studio Code
+.vscode/
+
+# User-specific files
+*.userosscache
+*.sln.docstates
+
+# Secrets and local configuration
+appsettings.Development.json
+.env
+.env.*
+
+# Logs
+*.log
+
+# Publish output
+publish/
+artifacts/
